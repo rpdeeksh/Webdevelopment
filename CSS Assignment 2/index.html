@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>RVU Vend</h1>
+        <div class="cart">
+            <img src="https://cdn4.iconfinder.com/data/icons/eon-ecommerce-i-1/32/cart_shop_buy_retail-512.png" alt="cart-icon" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i> Cart
+        </div>
+    </nav>
+    
+    <div class="cart-container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="tshirt.png" alt="RVU T-shirt"><br>RVU T-shirt</td>
+                    <td>₹25</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="decrement">-</button>
+                            <span>1</span>
+                            <button class="increment">+</button>
+                        </div>
+                    </td>
+                    <td><button class="delete">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="jacket.png" alt="RVU Jacket"><br>RVU Jacket</td>
+                    <td>₹50</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="decrement">-</button>
+                            <span>1</span>
+                            <button class="increment">+</button>
+                        </div>
+                    </td>
+                    <td><button class="delete">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="diary.png" alt="RVU Diary"><br>RVU Diary</td>
+                    <td>₹15</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="decrement">-</button>
+                            <span>1</span>
+                            <button class="increment">+</button>
+                        </div>
+                    </td>
+                    <td><button class="delete">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="id.png" alt="RVU ID Card"><br>RVU ID Card</td>
+                    <td>₹10</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="decrement">-</button>
+                            <span>1</span>
+                            <button class="increment">+</button>
+                        </div>
+                    </td>
+                    <td><button class="delete">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <div class="summary">
+            <h2>Order Summary</h2>
+            <p>Subtotal: <span>₹100</span></p>
+            <input type="text" id="coupon" placeholder="Enter coupon code">
+            <p class="coupon-text">Use 'FIRST' for 50% off</p>
+            <button id="apply-coupon">Apply</button>
+            <p>Total: <span id="total">₹100</span></p>
+            <button class="checkout">Checkout</button>
+        </div>
+
+        <footer>
+            <p>@All rights reserved.</p>
+        </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
